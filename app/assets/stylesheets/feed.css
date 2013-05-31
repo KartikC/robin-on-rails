@@ -1,0 +1,87 @@
+html, body{
+	background-color: #EDEDED;
+	margin:0;
+	padding:0;
+	border: 0;
+}
+
+a
+{
+	text-decoration:none;
+}
+
+#welcome {
+    font-family: Georgia, "Times New Roman",
+          Times, serif;
+    font-weight:normal;
+    color: #FA395A;
+    font-size:42px;
+     }
+    
+#feed {
+	padding: 4px;
+    font-family: 'open sans',arial,sans-serif;
+    color: #FA395A;
+ }
+    
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+}
+
+#feed{
+	font-size:13px;
+}
+#feed td
+{
+	height:30px
+}
+#white
+{
+	padding: 3px;
+	font-size:15px;
+	font-family: 'open sans',arial,sans-serif;
+	font-weight:500;
+}
+    
+#white a:link
+{
+	color: white;
+	text-decoration:none;
+}
+#white a:visited
+{
+	color: white;
+	text-decoration:none;
+}
+#white a:active
+{
+	color: white;
+	text-decoration:none;
+}
+#white a:hover
+{
+	color: #AAAAAA;
+	text-decoration:none;
+}
+    
+#top
+{
+	padding: 10px;
+	font-family: Georgia, "Times New Roman",
+          Times, serif;
+    font-weight:normal;
+    color: #FA395A;
+}
+
+#top td{
+	
+	font-size:14px;
+}
+    
+#name
+{ 
+	font-size:67px;
+    vertical-align: middle;
+}

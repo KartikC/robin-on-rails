@@ -1,0 +1,48 @@
+<style type="text/css">
+.bg {
+    background-image: url(<%=@background_image_url%>);
+    opacity: 0.2;
+    background-position:center;
+    position: absolute;
+    height: 165px;
+    width: 100%;
+}
+.name{
+	color: #<%=@user_link_color%>;
+}
+</style>
+<div class="bg">
+</div>
+<div id = "top">
+<div id = "name" class="name"><img src="<%=@user_image_url%>"><%= @username%></div>
+<i><%= @profile%></i>
+<table>
+	<tr>
+		<td><b>tweets</b></td>
+		<td><b>followers</b></td>
+		<td><b>following</b></td>
+	</tr>
+	<tr>
+		<td><%= link_to @num_tweets, feed_index_path(@status.from_user)%></td>
+		<td><%= @num_followers%></td>
+		<td><%= @num_following%></td>
+	</tr>
+</table>
+</div>
+<div id='feed'>
+<table id="feed" cellspacing="5" cellpadding="5px">
+<% @tweets.each do |tweet| %>
+  <tr>
+    <td id="white" align="right" bgcolor="#<%=tweet.user.profile_link_color%>"><%= link_to tweet.from_user, feed_index_path(tweet.from_user)%></td>
+    <td><%= tweet.text %></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+<% end %>
+</table>
+<%=link_to 'home', feed_index_path('home')%>
+</div>
+
