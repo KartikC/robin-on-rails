@@ -10,6 +10,9 @@
 .name{
 	color: #<%=@user_link_color%>;
 }
+.data{
+	color: inherit;
+}
 </style>
 <div class="bg">
 </div>
@@ -23,7 +26,7 @@
 		<td><b>following</b></td>
 	</tr>
 	<tr>
-		<td><%= link_to @num_tweets, feed_index_path(@status.from_user)%></td>
+		<td><%= link_to @num_tweets, feed_index_path(@status.from_user), :class => "data"%></td>
 		<td><%= @num_followers%></td>
 		<td><%= @num_following%></td>
 	</tr>

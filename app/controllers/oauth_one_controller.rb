@@ -41,8 +41,8 @@ def receiveTokens
   private
   
   #set to your keys and secrets. most likely remove and store somewhere else depending on your app
-  $TWITTER_KEY = '####'
-  $TWITTER_SECRET = '####'
+  $TWITTER_KEY = '###'
+  $TWITTER_SECRET = '###'
   
   
   def get_consumer(type)

@@ -5,11 +5,15 @@ things for you to add
 **enter your respective keys into**   
 /app/controllers/oauth_one_controller.rb _line 44_  
 ```
-$TWITTER_KEY = '####'
-$TWITTER_SECRET = '####'
+$TWITTER_KEY = '###'
+$TWITTER_SECRET = '###'
 ```
 **and**  
 /config/initializers/twitter.rb  
+
+if you are getting SSL errors you may have to follow this to define certificate authorities:
+https://gist.github.com/fnichol/867550
+
 required gems
 ---
 * oauth  
